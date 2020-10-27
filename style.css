@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 50px 0px 24px 0px;
+  text-align: center;
+  font-size: 44px;
+  font-weight: 600;
+}
+header p {
+  font-size: 25px;
+}
+
+.pads {
+  background: lightblue;
+  width: 100%;
+  display: flex;
+}
+.pads > div {
+  height: 200px;
+  width: 100px;
+  flex: 1;
+}
+.pads:hover{
+  cursor: pointer;
+}
+/*pad1;*/
+.pad1 {
+  background: #60d394;
+}
+.pad1:hover{
+  background: #60c2d3;
+}
+
+/*pad2;*/
+.pad2 {
+  background: #d36060;
+}
+.pad2:hover{
+  background: #606bd3;
+}
+
+/*pad3;*/
+.pad3 {
+  background: #c060d3;
+}
+.pad3:hover{
+  background: #60d394;
+}
+
+/*pad4;*/
+.pad4 {
+  background: #d3d160;
+}
+.pad4:hover{
+  background: #d36060;
+}
+
+/*pad5;*/
+.pad5 {
+  background: #606bd3;
+}
+.pad5:hover{
+  background: #c060d3;
+}
+.pad5:hover{
+  background: #60d394;
+}
+
+/*pad6;*/
+.pad6 {
+  background: #60c2d3;
+}
+.pad6:hover{
+  background: #d3d160;
+}
+
+
+.visual > div {
+  position: absolute;
+  bottom: 0%;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  transform: scale(1);
+  z-index: -1;
+}
+
+@keyframes jump {
+  0% {
+    bottom: 0%;
+    left: 20%;
+  }
+  50% {
+    bottom: 50%;
+    left: 50%;
+  }
+
+  100% {
+    bottom: 00%;
+    left: 80%;
+  }
+}
